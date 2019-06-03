@@ -1,0 +1,18 @@
+###################
+create sound test study spring boot in action 4
+###################
+
+1 component scan spring 會自動去掃描bean
+2 autowiring 將bean 滿足 dependency injection
+
+3 @Component 註解的意思就是說 有一個class XXX的零組件 請spring 幫我為他創造這個bean
+4 @ComponentScan 在spring 中啟用零組件的掃描
+5 @autowire 將程式碼注入進去
+6 spring 會將bean取名一個ID 通常是用 class name第一個字母改為小寫當作ID的命名
+  如果想要改ID的命名的話可以將@Component("XXXX") XXXX就是新的命名
+   也可以用@Name來改
+
+7 在有些狀況下是無法使用component and autowired 可能是要引入第三方程式
+  這時候可以使用的方式就是採用javaconfig 使用的方法就是使用@configuration
+
+
